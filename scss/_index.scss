@@ -16,11 +16,7 @@ p {
   line-height: 36px;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 36px;
-}
+
 
 
 .row {
@@ -29,7 +25,6 @@ h3 {
 }
 
 .wrapper {
-  width: 100%;
   max-width: 1920px;
   background-color: #fff;
   padding-top: 48px;
@@ -42,13 +37,11 @@ h3 {
 }
 
 .title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-weight: 700;
+
+  font-weight: 400;
   padding-bottom: 8px;
   margin-bottom: 16px;
-  border-bottom: 2px solid #9f9f9f;
+  border-bottom: 1px solid #9f9f9f;
 
   h2 {
     font-size: 32px;
@@ -56,8 +49,8 @@ h3 {
 
   }
 
-  p {
-
+  span {
+    font-size: 24px;
     line-height: 32px;
     margin-left: 16px;
     color: $titleEnglishColor;
@@ -69,9 +62,9 @@ h3 {
   h1 {
     font-size: 80px;
     font-family: "AndaleMono", monospace;
-    padding-bottom: 27px;
+    padding-bottom: 24px;
     line-height: 90px;
-    margin-bottom: 34px;
+    margin-bottom: 48px;
     border-bottom: 2px solid #000;
   }
 
@@ -120,18 +113,8 @@ h3 {
 
   .education-block {
     .contents {
-      // position: relative;
 
-      li::before {
-        content: '';
-        position: absolute;
-        left: -24px;
-        top: 10.5px;
-        bottom: 0;
-        height: 100%;
-        width: 1px;
-        background-color: $beforeIconColor;
-      }
+      position: relative;
 
       li:first-of-type {
         padding-bottom: 32px;
@@ -141,10 +124,24 @@ h3 {
         height: 0;
       }
 
-      p {
+      li {
         position: relative;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 36px;
 
         &::before {
+          content: '';
+          position: absolute;
+          left: -24px;
+          top: 10.5px;
+          bottom: 0;
+          height: 100%;
+          width: 1px;
+          background-color: $beforeIconColor;
+        }
+
+        &::after {
           content: '';
           position: absolute;
           width: 16px;
@@ -196,11 +193,15 @@ h3 {
     justify-content: center;
 
     span {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 0;
       padding-left: 16px;
+      font-weight: 400;
+      color: #fff;
       font-size: 24px;
       line-height: 24px;
-      position: relative;
-      vertical-align: center;
     }
   }
 
@@ -224,11 +225,10 @@ h3 {
     li {
       font-weight: 100;
       text-align: left;
+      margin-bottom: 16px;
+      line-height: 32px;
 
-      p {
-        margin-bottom: 16px;
-        line-height: 32px;
-      }
+
     }
   }
 
@@ -253,6 +253,15 @@ h3 {
 
   li {
     margin-bottom: 32px;
+    max-width: 642px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 24px; 
+    line-height: 36px;
+    &:first-child{
+      margin-bottom: 32px;
+    }
 
     &:last-child {
       margin-bottom: 72px;
@@ -260,8 +269,14 @@ h3 {
   }
 
   img {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+
+  span{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
   }
 
   p {
@@ -279,7 +294,6 @@ footer {
   // padding:24px 360px 48px;
 
   .title {
-    width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 24px;
@@ -292,10 +306,15 @@ footer {
     padding-bottom: 3px;
 
     span {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 0;
       padding-left: 16px;
+      font-weight: 400;
+      color: #fff;
       font-size: 24px;
       line-height: 24px;
-      vertical-align: center;
     }
   }
 
